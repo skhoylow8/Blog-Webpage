@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title>PIC 40 HW2 First Time in Hawaii</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="HW2.css"/>
+</head>
+
+<body>
+	<header>
+		<h1>First Time in Hawaii</h1>
+	</header>
+
+	<main>
+		<div>
+		<table>
+			<thead>
+				<tr>
+					<th>Dates</th> <th>Activity</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<th>6/30/15</th> <td>We arrived in Honolulu, Hawaii.</td>
+				</tr>
+
+				<tr>
+					<th>7/1/15</th> <td>We went to Lanikai Beach.</td>
+				</tr>
+
+				<tr>
+					<th>7/2/15 - 7/3/15</th> <td>Went to Aulani, Disney Resort and Spa.</td>
+				</tr>
+
+				<tr>
+					<th>7/4/15</th> <td>Went to a Fourth of July parade.</td>
+				</tr>
+
+				<tr>
+					<th>7/5/15</th> <td>Watched the Women's World Cup Soccer Final.</td>
+				</tr>
+
+				<tr>
+					<th>7/6/15</th> <td>Went on a hike.</td>
+				</tr>
+
+				<tr>
+					<th>7/7/15</th> <td>Went to the beach again.</td>
+				</tr>
+
+				<tr>
+					<th>7/8/15</th> <td>We left Hawaii and went back to LA.</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<section class="pictures">
+			<figure>
+				<img src="https://www.best-of-oahu.com/images/xLanikai-Beach-Photo-3.jpg.pagespeed.ic.1N19xxDSII.jpg" alt="Picture of Lanikai Beach" width="400" class="beach" title="Lanikai Beach"/>
+			</figure>
+
+			<figure>
+				<img src="https://images.trvl-media.com/hotels/5000000/4620000/4612600/4612545/b679a47d_z.jpg" alt="Picture of Aulani Resort" width="375" class="Aulani"/>
+				<figcaption class="Aulanicap"><b>Disney Aulani Resort</b></figcaption>
+			</figure>
+
+			<figure>
+				<img src="https://images.privatefly.com/images/inspiration/honolulu-la_670x359.jpg" alt="Honolulu to LA" width="400" class="flight"/>
+				<figcaption class="mapcap"><b>Map from Honolulu to LA</b></figcaption>
+			</figure>
+		</section>
+
+		<p>
+			I was so excited when my mom said that we were going to Hawaii that summer. I had never been to Hawaii eventhough we had family who lived there. When we arrived in the airport in Honolulu our uncle, aunt, and cousins picked us up and they made this cute welcome sign for us. We then went to their apartment and got settled in. It was very hot and humid there and their apartment had no airconditioning. We then watched the semifinal game of the Women's World Cup. The US was playing Germany and the US beat them 2-0. It was a very good and exciting game. 
+		</p>
+		<p>
+
+			The next day we went to the beach that was walking distance from their place. The ocean there is so much nicer than LA. The sand was cleaner and the water was so much clearer. Usually when I go to the beach in LA I never go in the water but the water in Hawaii was so much warmer, it was like a heated pool. We spent a couple of hours there and then went and got something to eat. After we ate some food, we went back to the apartment and just stayed there for the rest of the day.
+		</p>
+		<p>
+			The next day we went to Aulani Resort. Our mom decided that this would be our gift for our 15th birthday. This resort was so pretty. It was Disney themed and it had like two pools and a lazy river. It also had a beach that we could walk to. Our suite had a living room with two seperate bedrooms. My family and I were in one of the rooms while my uncle, aunt, and cousins were in the other room. It was a luxurious hotel and it was the nicest one I've ever been in.
+		</p>
+		<p>
+			After that it was the Fourth of July so we went to a parade during the day and then saw the fireworks at night. The next day we watched the Women's World Cup Final. The US women's national team was playing Japan and this game was a repeat of the last World Cup Final in 2011. In the last World Cup the US lost to Japan in penalty kicks and they wanted to beat them this time. Also the US women haven't won the World Cup since 1999 so it was long over due for them. They ended up winning during regular time with a score of 5-2. It was a spectacular game, the US was winning 4-0 within 16 minutes. The next day we went hiking and it started raining while we were coming down. The day after that we went to the beach one last time. Then the following day it was time to leave and go back to LA.
+		</p>
+		</div>
+
+		<form>
+			<fieldset id="Hawaii">
+				<h3>Have you been to Hawaii?</h3>
+				<p>
+					<label for="yes">Yes</label>
+					<input type="radio" id="yes" value="y" name="Hawaii" checked/>
+					<label for="no">No</label>
+					<input type="radio" id="no" value="n" name="Hawaii">
+				</p>
+			</fieldset>
+
+			<fieldset>
+				<p>
+					Leave a comment.
+				</p>
+				<p>
+					<label for="name">Name:</label>
+					<input type="text" name="theirName" id="name" pattern="[A-Z]+[a-z]*"/>
+				</p>
+				<p>
+					<label for="email_address_area">Email:</label>
+					<!--email is wrong-->
+					<input type="text" name="theirEmail" id="email_address_area" pattern="[A-Za-z0-9_]*@[A-Za-z0-9_]*.(com|edu)?"/>
+				</p>
+				<p>
+					<textarea rows="8" cols="220" name="comment"></textarea>
+				</p>
+			</fieldset>
+
+			<fieldset>
+				<p>
+					<!--gives the submit botton and the reset button-->
+					<input type="submit" value="Submit"/>
+					<input type="reset" value="Reset"/>
+				</p>
+			</fieldset>
+		</form>
+
+	</main>
+
+	<footer>
+		This page is &copy;2019 by Setareh Khoylow
+	</footer>
+</body>
+
+</html>

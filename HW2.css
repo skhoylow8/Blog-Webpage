@@ -1,0 +1,87 @@
+body{
+	background-color: #b19cd9;/*gives a light purple background for the webpage*/
+	color:white;/*makes the text white*/
+}
+
+h1{
+	font-size:2.5em;/*make the title of the page 2.5 times bigger than normal font*/
+	font-family: Time New Roman, New York, serif;/*makes the font Time New Roman*/
+	text-align: center;/*puts the text in the center*/
+}
+
+table{
+	font-family:Time New Roman, New York, serif;/*makes the font in the table Time New Roman*/
+	width:400px;/*makes the table 400 pixels wide*/
+	float:left;/*makes it float to the left of the text*/
+	margin-right:15px;/*gives 15 pixels of space between the table and the text*/
+}
+table,th,td{
+	border: 1px solid white;/*gives the table a border*/
+}
+
+.pictures{
+	position:relative;/*positions the pictures*/
+	display:inline;/*allows the text to wrap around the pictures*/
+	float:right;/*places the images to the right of the text*/
+	height:340px;/*gives an outline for the images with a height of 340px*/
+	width:500px;/*gives an outline for the images with a width of 500px*/
+}
+
+.beach{
+	position:absolute;/*positions the first picture*/
+	top:10px;/*shifts it down 10 pixels*/
+	left:10px;/*shifts it to the left 10 pixels*/
+	z-index:3;/*allows this image to be on top of the other two images*/
+	border:5px solid lightblue;/*gives a light blue border*/
+}
+
+.Aulani{
+	position:absolute;/*positions the second picture*/
+	top:40px;/*shifts it down 40 pixels*/
+	left:70px;/*shifts it to the left 70 pixels*/
+	z-index:2;/*places the image below the first picture*/
+	border:5px solid lightgreen;/*gives a light green border*/
+}
+
+.flight{
+	position:absolute;/*postions the third picture*/
+	top:100px;/*shifts it down 100 pixels*/
+	left:90px;/* shifts it to the left 90 pixels*/
+	z-index:1;/*places it below the other two pictures*/
+	border:5px solid #FFFF33;/*gives a light yellow border*/
+}
+
+.Aulani:hover{
+	z-index:4; /*when you hover your mouse over the image it comes forward*/
+}
+
+.flight:hover{
+	z-index:5; /*when you hover your mouse over the image it comes forward*/
+}
+
+.Aulani:hover + .Aulanicap{/*when you mouse over the image the caption will come forward with it*/
+	position:absolute;/*positions the caption*/
+	bottom:25px;/*moves the caption up 25 pixels*/
+	left:70px;/*shifts it left 70 pixels*/
+	z-index:4;/*brings the caption forward with the picture*/
+	border: 5px solid lightgreen;/*give the caption a light green border*/
+	background-color: lightgray;/*gives the box a light gray background*/
+}
+
+.flight:hover + .mapcap{/*when you mouse over the image the caption will come forward with it*/
+	position:absolute;/*positions the caption*/
+	bottom:-10px;/*moves the cpation up 10 pixels*/
+	right:229px;/*moves the caption right 229 pixels*/
+	z-index:5;/*brings it forward with the picture*/
+	border: 5px solid #FFFF33;/*gives a light yellow border*/
+	background-color: lightgray;/*gives a light gray background for the caption*/
+}
+
+p{
+	text-indent: 20px;/*indents all the paragraph tags by 20 pixels*/
+}
+
+fieldset{/*refers to the part of the page that the user interacts with*/
+	background-color: #C6BEBE;/*gives a light gray background color*/
+}
+
